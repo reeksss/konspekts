@@ -26,8 +26,8 @@ void main() {
     Integer j = 128;                                // Есть методы через .
     Integer k = 128;
 
-    Integer x = new Integer(500);             // Можно и так, явное создание
-    Integer y = Integer.valueOf(500);            // современный способ
+    Integer x = new Integer(500);                   // Можно и так, явное создание
+    Integer y = Integer.valueOf(500);               // современный способ
 
     System.out.println(j == k);                     // false, тк. 128 не в пуле(-128 - 127), сравниваются обьекты, значение 128+ - новый обьект
     System.out.println(j.equals(k));                // true, equals сравнивает значения
