@@ -43,6 +43,6 @@ void main() {
     int[][] matrix = new int[3][5];    // Двумерный массив(массив массивов), кол-во [] может быть каким угодно
 
     int[][] jagged = new int[3][];     // Зубчатый массив
-    jagged[2] = new int[3];            // "Строка" с индексом 2 имеет 3 "cтолбца"
+    jagged[2] = new int[3];            // массив с индексом 2 имеет 3 элемента
     System.out.println(Arrays.deepToString(jagged));// [null, null, [0, 0, 0]]
 }
