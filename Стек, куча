@@ -3,7 +3,8 @@ void main() {
     changePrimitive(a);
     System.out.println(a); // 10
 
-    int[] arr = {1,2,3};   // arr - ссылка на обьект [1,2,3] в куче(heap)
+    int[] arr = {1,2,3};// arr - ссылка на обьект 
+                        //[1,2,3] в куче(heap)
     changeObject(arr);
     System.out.println(Arrays.toString(arr)); // [1,5,3]
 
@@ -13,8 +14,9 @@ void main() {
     System.out.println(b); // 5
 
     int[] arr1;
-    arr1 = arr;     // arr1 - ссылка на arr - ссылка на массив [1,5,3]
-    arr1[1] = 7;    // Обращаемся к arr - ссылке на массив [1,5,3], меняем число в самом массиве
+    arr1 = arr; // arr1 - ссылка на arr - ссылка на массив [1,5,3]
+    arr1[1] = 7;// Обращаемся к arr - ссылке на массив
+             //[1,5,3], меняем число в самом массиве
     System.out.println(Arrays.toString(arr));// [1,7,3]
 }
 static void changePrimitive(int a) {
