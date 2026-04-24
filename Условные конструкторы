@@ -14,7 +14,7 @@ void main() {
     int b = 5; // Либо через Scanner
     switch (b) {
         case 2 -> System.out.println("Два");
-        case 3 -> {
+        case 3 -> {   // {} в switch - yield
             System.out.println("Три");
             System.out.println("Three");
         }
