@@ -23,31 +23,45 @@ public class Dog implements Raw {
 
 
 void main() {
-    // Проверяет, был ли объект, на которую ссылается переменная х, создан на основе класса у
+    // Проверяет, был ли объект, на которую ссылается 
+    //переменная х, создан на основе класса у
     // 'Обьект' instanceof 'Класс'
 
 
     Integer a = 1;
     System.out.println(a instanceof Integer);// true
-    System.out.println(a instanceof String); // Ошибка компиляции! java заранее понимает что a никак не может быть String
+
+    System.out.println(a instanceof String); 
+    // Ошибка компиляции! java заранее понимает что a 
+    //никак не может быть String
 
 
     Cat cat = new MaineCoon();
-    System.out.println(cat instanceof Animal); // true - MaineCoon - наследник Animal
-    System.out.println(cat instanceof Cat); // true - MaineCoon - наследник Cat
+
+    System.out.println(cat instanceof Animal); 
+    // true - MaineCoon - наследник Animal
+
+    System.out.println(cat instanceof Cat); 
+    // true - MaineCoon - наследник Cat
 
     Cat cat2 = new Cat();
-    System.out.println(cat2 instanceof MaineCoon); // false - Cat - предок MaineCoon
+
+    System.out.println(cat2 instanceof MaineCoon); 
+    // false - Cat - предок MaineCoon
 
 
     // Так же с интерфейсами
     Dog dog = new Dog();
-    System.out.println(dog instanceof Raw); // true - Dog реализует интерфейс Raw
+
+    System.out.println(dog instanceof Raw); 
+    // true - Dog реализует интерфейс Raw
 
 
     //null
     Integer i = null;
-    System.out.println(i instanceof Integer); // false, с null instanceof всегда false
+
+    System.out.println(i instanceof Integer); 
+    // false, с null instanceof всегда false
 
 
 
@@ -57,7 +71,7 @@ void main() {
 //Старый способ
 public void oldMeow(Animal animal) {
     if(animal instanceof Cat) {
-        Cat cat = (Cat) animal; // Явное приведение к Cat
+        Cat cat = (Cat) animal;// Явное приведение к Cat
         cat.Meow();
     }
 }
