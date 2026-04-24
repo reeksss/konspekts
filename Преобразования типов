@@ -13,7 +13,8 @@ void main() {
 
     int e = 200;
     byte f = (byte) e; // Можно
-    System.out.println(f); // Вывод: -56, из-за того что byte вмещает только 8 бит(-128 - 127),
+    System.out.println(f); // Вывод: -56, из-за того что byte
+                           //вмещает только 8 бит(-128 - 127),
                            // ответсвенность за результат берем на себя
 
     double d1 = 0.1;
@@ -33,11 +34,13 @@ void main() {
 
     // char
     char c1 = 65;
-    System.out.println(c1); // Вывод: А. не число, а символ Unicode под номером 65
+    System.out.println(c1); // Вывод: А. не число,
+                    //а символ Unicode под номером 65
 
     char c2 = 'A';
     int i = (int) c2;
-    System.out.println(i+5);// Вывод: 70. символ 'A' - 65 номер в Unicode. 65+5=70
+    System.out.println(i+5);// Вывод: 70. символ 'A'
+                  // - 65 номер в Unicode. 65+5=70
 
 
     // Продвижение типов в выражениях
