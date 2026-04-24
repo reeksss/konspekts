@@ -25,9 +25,13 @@ public class Dog implements Raw {
 void main() {
     // Проверяет, был ли объект, на которую ссылается переменная х, создан на основе класса у
     // 'Обьект' instanceof 'Класс'
+
+
     Integer a = 1;
     System.out.println(a instanceof Integer);// true
     //System.out.println(a instanceof String); // Ошибка компиляции! java заранее понимает что a никак не может быть String
+
+
     Cat cat = new MaineCoon();
     System.out.println(cat instanceof Animal); // true - MaineCoon - наследник Animal
     System.out.println(cat instanceof Cat); // true - MaineCoon - наследник Cat
@@ -63,6 +67,7 @@ public void newMeow(Animal animal) {
         cat.Meow();
     }
 }
+
 
 // switch
 public void swMeow(Animal animal) {
