@@ -1,6 +1,7 @@
 void main() {
     // Массивы, при создании массива массивов заполняется 0 (у зубчатого - null), 
-    // Выводятся через Arrays.deepToString(matrix), одномерный через Arrays.toString(), индексы с 0
+    // Выводятся через Arrays.deepToString(matrix), 
+    // одномерный через Arrays.toString(), индексы с 0
 
     int[] arr = {1,2,3};               // Одномерный массив
     System.out.println(arr);           // [I@1f32e575 (мусор)
@@ -11,7 +12,9 @@ void main() {
 
     int[][] jagged = new int[3][];     // Зубчатый массив
     jagged[2] = new int[3];            // массив с индексом 2 имеет 3 элемента
-    System.out.println(Arrays.deepToString(jagged));// [null, null, [0, 0, 0]]
+
+    System.out.println(Arrays.deepToString(jagged));
+    // [null, null, [0, 0, 0]]
 
 
     // Копирование массива
@@ -21,6 +24,8 @@ void main() {
 
     int[] arr2 = new int[4];
     System.arraycopy(arr, 0, arr2, 1, 2); // [0, 1, 2, 0]
+
     // 1. массив источник, 2. с какого элемент начать копирование из arr,
-    // 3. массив который копируют, 4. с какого индекса вставлять элементы в arr2, 5. сколько копировать
+    // 3. массив который копируют, 4. с какого индекса 
+    //вставлять элементы в arr2, 5. сколько копировать
 }
