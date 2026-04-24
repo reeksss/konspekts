@@ -22,6 +22,7 @@ void main() {
     // при создании строки. она попадает в пул строк
     System.out.println(s1 == s2); // true
 
+
     // Integer
     Integer j = 128;   // Есть методы через .
     Integer k = 128;
