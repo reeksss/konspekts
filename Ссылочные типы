@@ -1,0 +1,37 @@
+void main() {
+    // Ссылочные обьекты, не имеют числовых литералов(Integer может использовать int литерал(не свой)),
+    
+    // enum
+    enum Type {             // тип Type, принимает значения либо COMMON, либо EPIC, ничего другого.
+        COMMON, EPIC
+    }
+    Type e1 = Type.COMMON;  // Присваивание Type(enum)
+
+
+    // String
+    String i = "Hello";   // Неизменяем
+    i.toLowerCase();      // Игнорируется(возвращается строка, можно присвоить)
+    i = i.toLowerCase();  // Правильно
+
+    StringBuilder sb = new StringBuilder("Hello");  // Для изменяемости - StringBuilder
+    sb.append("5");   // sb = Hello5
+
+    String s1 = "hello";
+    String s2 = "hello";
+    // s1, s2 - ссылаются на 1 и тот же обьект
+    // при создании строки. она попадает в пул строк
+    System.out.println(s1 == s2); // true
+
+    // Integer
+    Integer j = 128;   // Есть методы через .
+    Integer k = 128;
+
+    Integer x = new Integer(500);       // Можно и так, явное создание
+    Integer y = Integer.valueOf(500);   // современный способ
+
+    System.out.println(j == k);         // false, тк. 128 не в пуле(-128 - 127), сравниваются обьекты, значение 128+ - новый обьект
+    System.out.println(j.equals(k));    // true, equals сравнивает значения
+
+    System.out.println(j == c);         // true, если 1 из обьектов в '==' - примитив, то сравнивается не с k, а с k.intValue()
+
+}
