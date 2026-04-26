@@ -14,9 +14,12 @@ void main() {
     System.out.println(b); // 5
 
     int[] arr1;
+
     arr1 = arr; // arr1 - ссылка на arr - ссылка на массив [1,5,3]
+
     arr1[1] = 7;// Обращаемся к arr - ссылке на массив
              //[1,5,3], меняем число в самом массиве
+
     System.out.println(Arrays.toString(arr));// [1,7,3]
 }
 static void changePrimitive(int a) {
