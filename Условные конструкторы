@@ -21,4 +21,18 @@ void main() {
         case 5 -> System.out.println("Пять");
     }
     // Если b = 2, вывести Два, если b = 5, вывести Пять
+
+    int c = 4;
+    switch (c) {
+        case 1: System.out.println("1");
+        case 2: System.out.println("2"); break;
+        case 4: System.out.println("4");
+        case 5: System.out.println("Проваливание");
+    }
+    // 4, Проваливание
+
+    // Если использовать : без break,
+    // провалится вниз
+    // нельзя и -> и :
+    // нужен break;
 }
